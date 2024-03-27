@@ -51,7 +51,7 @@ function App() {
 
   return (
     <>
-    <h3 id="heading">Select balls, then press the button to change containers</h3>
+    <h2 id="heading">Select balls, then press the button to change containers</h2>
     <div id="app-container">
       <Bucket
         contents={b1Contents}
