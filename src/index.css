@@ -2,13 +2,19 @@ body {
   background-color: rgb(144, 79, 79);
 }
 
+#heading {
+  color: rgb(76, 20, 20);
+  text-align: center;
+}
+
 #app-container {
   display: grid;
   margin: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-.switch-button{
+
+.switch-button {
   justify-self: center;
   align-self: flex-start;
   background-color: rgb(219, 142, 142);

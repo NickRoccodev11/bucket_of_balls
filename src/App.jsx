@@ -30,8 +30,28 @@ function App() {
     }
     setSelected(selectedArr)
   }
-  
+  //function for switching 
+  const switchBuckets = () => {
+    const ballsToTakeFrom1 = b1Contents.filter(ball => {
+      return selected.includes(ball.id)
+    })
+    const ballsLeftIn1 = b1Contents.filter(ball => {
+      return !selected.includes(ball.id)
+    })
+    const ballsToTakeFrom2 = b2Contents.filter(ball => {
+      return selected.includes(ball.id)
+    })
+    const ballsLeftIn2 = b2Contents.filter(ball => {
+      return !selected.includes(ball.id)
+    })
+    setB1Contents([...ballsLeftIn1, ...ballsToTakeFrom2])
+    setB2Contents([...ballsLeftIn2, ...ballsToTakeFrom1])
+    setSelected([])
+  }
+
   return (
+    <>
+    <h3 id="heading">Select balls, then press the button to change containers</h3>
     <div id="app-container">
       <Bucket
         contents={b1Contents}
@@ -43,8 +63,12 @@ function App() {
         selectBall={selectBall}
         selected={selected}
       />
-       <button className="switch-button">switch buckets</button>
+      <button className="switch-button"
+        onClick={() => switchBuckets()}
+      >
+        switch buckets</button>
     </div>
+    </>
   )
 }
 
