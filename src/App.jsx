@@ -19,7 +19,7 @@ function App() {
     { id: 9, color: "magenta" },
   ])
   const [selected, setSelected] = useState([])
-  
+
   //pass the ball id into selected array to keep track of which should be selected
   const selectBall = (ballId) => {
     const selectedArr = [...selected];
@@ -33,17 +33,19 @@ function App() {
   }
   //function for switching containers
   const switchBuckets = () => {
-    const ballsToTakeFrom1 = b1Contents.filter(ball => {
-      return selected.includes(ball.id)
+    const ballsToTakeFrom1 = [];
+    const ballsLeftIn1 = [];
+    b1Contents.forEach(ball => {
+      selected.includes(ball.id)
+        ? ballsToTakeFrom1.push(ball)
+        : ballsLeftIn1.push(ball)
     })
-    const ballsLeftIn1 = b1Contents.filter(ball => {
-      return !selected.includes(ball.id)
-    })
-    const ballsToTakeFrom2 = b2Contents.filter(ball => {
-      return selected.includes(ball.id)
-    })
-    const ballsLeftIn2 = b2Contents.filter(ball => {
-      return !selected.includes(ball.id)
+    const ballsToTakeFrom2 = [];
+    const ballsLeftIn2 = [];
+    b2Contents.forEach(ball => {
+      selected.includes(ball.id)
+        ? ballsToTakeFrom2.push(ball)
+        : ballsLeftIn2.push(ball)
     })
     setB1Contents([...ballsLeftIn1, ...ballsToTakeFrom2])
     setB2Contents([...ballsLeftIn2, ...ballsToTakeFrom1])
@@ -52,23 +54,23 @@ function App() {
 
   return (
     <>
-    <h2 id="heading">Select balls, then press the button to change containers</h2>
-    <div id="app-container">
-      <Bucket
-        contents={b1Contents}
-        selectBall={selectBall}
-        selected={selected}
-      />
-      <Bucket
-        contents={b2Contents}
-        selectBall={selectBall}
-        selected={selected}
-      />
-      <button className="switch-button"
-        onClick={() => switchBuckets()}
-      >
-        switch buckets</button>
-    </div>
+      <h2 id="heading">Select balls, then press the button to change containers</h2>
+      <div id="app-container">
+        <Bucket
+          contents={b1Contents}
+          selectBall={selectBall}
+          selected={selected}
+        />
+        <Bucket
+          contents={b2Contents}
+          selectBall={selectBall}
+          selected={selected}
+        />
+        <button className="switch-button"
+          onClick={() => switchBuckets()}
+        >
+          switch buckets</button>
+      </div>
     </>
   )
 }

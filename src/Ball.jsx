@@ -5,8 +5,6 @@ const Ball = ({ id, color, selectBall, selected }) => {
       className={` ball ${color} ${selected.includes(id) ? 'selected' : ''}`}
       onClick={() => selectBall(id)}
     >
-
-
     </div>
   )
 }
