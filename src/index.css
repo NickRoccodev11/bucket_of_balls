@@ -3,8 +3,18 @@ body {
 }
 
 #app-container {
-  display: flex;
+  display: grid;
   margin: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.switch-button{
+  justify-self: center;
+  align-self: flex-start;
+  background-color: rgb(219, 142, 142);
+  box-shadow: 5px 5px 5px brown;
+  font-size: larger;
+  color: rgb(115, 27, 27);
 }
 
 .bucket {
@@ -15,10 +25,6 @@ body {
   margin: 10px;
 }
 
-.b-container {
-  display: flex;
-  flex-direction: column;
-}
 
 .ball {
   height: 30px;

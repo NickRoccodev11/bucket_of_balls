@@ -30,7 +30,7 @@ function App() {
     }
     setSelected(selectedArr)
   }
-  console.log(selected)
+  
   return (
     <div id="app-container">
       <Bucket
@@ -43,6 +43,7 @@ function App() {
         selectBall={selectBall}
         selected={selected}
       />
+       <button className="switch-button">switch buckets</button>
     </div>
   )
 }
