@@ -19,6 +19,7 @@ function App() {
     { id: 9, color: "magenta" },
   ])
   const [selected, setSelected] = useState([])
+  
   //pass the ball id into selected array to keep track of which should be selected
   const selectBall = (ballId) => {
     const selectedArr = [...selected];
@@ -30,7 +31,7 @@ function App() {
     }
     setSelected(selectedArr)
   }
-  //function for switching 
+  //function for switching containers
   const switchBuckets = () => {
     const ballsToTakeFrom1 = b1Contents.filter(ball => {
       return selected.includes(ball.id)
