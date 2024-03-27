@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(144, 79, 79);
+}
+
+#app-container {
+  display: flex;
+  margin: 10px;
+}
+
+.bucket {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  background-color: rgb(171, 184, 195);
+  margin: 10px;
+}
+
+.b-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ball {
+  height: 30px;
+  width: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+.button {
+  align-self: flex-end;
+}
+
+.selected {
+  border: 2px solid rgb(238, 238, 193);
+  box-shadow: 5px 5px 5px rgb(211, 211, 163);
+}
+
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.magenta {
+  background-color: magenta;
+}
