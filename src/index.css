@@ -29,15 +29,18 @@ body {
   border: 2px solid black;
   background-color: rgb(171, 184, 195);
   margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 
 .ball {
-  height: 30px;
-  width: 30px;
+  height: 67px;
+  width: 67px;
   border: 2px solid black;
   border-radius: 50%;
-  margin: 4px;
+  margin: 14px;
 }
 
 .button {
