@@ -20,7 +20,7 @@ function App() {
   ])
   const [selected, setSelected] = useState([])
 
-  //pass the ball id into selected array to keep track of which should be selected
+  //pass the ball id into selected array to keep track of selected balls
   const selectBall = (ballId) => {
     const selectedArr = [...selected];
     if (selectedArr.includes(ballId)) {
@@ -31,22 +31,23 @@ function App() {
     }
     setSelected(selectedArr)
   }
-  //function for switching containers
+
+  //prepare new arrays of sorted balls
+  const processBalls = (container) => {
+    const ballsToLeave = [];
+    const ballsToRemove = [];
+    container.forEach(ball => {
+      selected.includes(ball.id)
+        ? ballsToRemove.push(ball)
+        : ballsToLeave.push(ball)
+    })
+    return [ballsToLeave, ballsToRemove]
+  }
+
+  //use the sorted arrays to switch selected balls into new buckets
   const switchBuckets = () => {
-    const ballsToTakeFrom1 = [];
-    const ballsLeftIn1 = [];
-    b1Contents.forEach(ball => {
-      selected.includes(ball.id)
-        ? ballsToTakeFrom1.push(ball)
-        : ballsLeftIn1.push(ball)
-    })
-    const ballsToTakeFrom2 = [];
-    const ballsLeftIn2 = [];
-    b2Contents.forEach(ball => {
-      selected.includes(ball.id)
-        ? ballsToTakeFrom2.push(ball)
-        : ballsLeftIn2.push(ball)
-    })
+    const [ballsLeftIn1, ballsToTakeFrom1] = processBalls(b1Contents)
+    const [ballsLeftIn2, ballsToTakeFrom2] = processBalls(b2Contents)
     setB1Contents([...ballsLeftIn1, ...ballsToTakeFrom2])
     setB2Contents([...ballsLeftIn2, ...ballsToTakeFrom1])
     setSelected([])
