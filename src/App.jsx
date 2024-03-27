@@ -67,11 +67,12 @@ function App() {
           selectBall={selectBall}
           selected={selected}
         />
-        <button className="switch-button"
+      
+      </div>
+      <button className="switch-button"
           onClick={() => switchBuckets()}
         >
           switch buckets</button>
-      </div>
     </>
   )
 }

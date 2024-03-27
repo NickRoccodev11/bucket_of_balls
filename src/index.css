@@ -8,24 +8,24 @@ body {
 }
 
 #app-container {
-  display: grid;
-  margin: 10px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  margin: 20px;
+  height:400px;
 }
 
 .switch-button {
-  justify-self: center;
-  align-self: flex-start;
+ margin-left: 41%;
   background-color: rgb(219, 142, 142);
   box-shadow: 5px 5px 5px brown;
   font-size: larger;
   color: rgb(115, 27, 27);
+  height:80px;
+  width: auto;
 }
 
 .bucket {
-  height: 400px;
-  width: 400px;
+  height: 70%;
+  width: 70%;
   border: 2px solid black;
   background-color: rgb(171, 184, 195);
   margin: 10px;
@@ -33,24 +33,24 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   border-radius: 5%;
+  padding: 20px;
 }
 
 
 .ball {
-  height: 67px;
-  width: 67px;
+  height: 0;
+  width: 50%;
+  /* min-width: 50px; */
+  padding-bottom: 50%;
   border: 2px solid black;
   border-radius: 50%;
   margin: 14px;
-}
-
-.button {
-  align-self: flex-end;
+  overflow: hidden;
 }
 
 .selected {
   border: 2px solid rgb(238, 238, 193);
-  box-shadow: 5px 5px 5px rgb(211, 211, 163);
+  box-shadow: 5px 5px 5px rgb(236, 236, 181);
 }
 
 
