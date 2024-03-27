@@ -20,7 +20,7 @@ function App() {
   ])
   const [selected, setSelected] = useState([])
 
-  //pass the ball id into selected array to keep track of selected balls
+  //use ball ID to keep track of selected balls
   const selectBall = (ballId) => {
     const selectedArr = [...selected];
     if (selectedArr.includes(ballId)) {
