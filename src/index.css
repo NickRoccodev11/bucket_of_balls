@@ -10,16 +10,16 @@ body {
 #app-container {
   display: flex;
   margin: 20px;
-  height:400px;
+  height: 400px;
 }
 
 .switch-button {
- margin-left: 41%;
+  margin-left: 41%;
   background-color: rgb(219, 142, 142);
   box-shadow: 5px 5px 5px brown;
   font-size: larger;
   color: rgb(115, 27, 27);
-  height:80px;
+  height: 80px;
   width: auto;
 }
 
@@ -92,4 +92,28 @@ body {
 
 .magenta {
   background-color: magenta;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+}
+
+.olive {
+  background-color: olive;
+}
+
+.darkslategray {
+  background-color: darkslategray;
+}
+
+.cornflowerblue {
+  background-color: cornflowerblue;
+  }
+
+.salmon{
+  background-color: salmon;
 }

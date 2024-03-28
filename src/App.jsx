@@ -9,14 +9,20 @@ function App() {
     { id: 1, color: "orange" },
     { id: 2, color: "yellow" },
     { id: 3, color: "green" },
-    { id: 4, color: "blue" }
-  ])
-  const [b2Contents, setB2Contents] = useState([
+    { id: 4, color: "blue" },
     { id: 5, color: "purple" },
     { id: 6, color: "white" },
-    { id: 7, color: "black" },
+    { id: 7, color: "black" }
+  ])
+  const [b2Contents, setB2Contents] = useState([
     { id: 8, color: "brown" },
     { id: 9, color: "magenta" },
+    { id: 10, color: "lightgreen" },
+    { id: 11, color: "cornflowerblue" },
+    { id: 12, color: "olive" },
+    { id: 13, color: "teal" },
+    {id: 14, color: "darkslategray"},
+    {id: 15, color: "salmon"}
   ])
   const [selected, setSelected] = useState([])
 
@@ -67,12 +73,12 @@ function App() {
           selectBall={selectBall}
           selected={selected}
         />
-      
+
       </div>
       <button className="switch-button"
-          onClick={() => switchBuckets()}
-        >
-          switch buckets</button>
+        onClick={() => switchBuckets()}
+      >
+        switch buckets</button>
     </>
   )
 }
