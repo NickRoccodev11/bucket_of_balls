@@ -1,8 +1,8 @@
-# React + Vite
+#Bucket-O-Balls
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- You've got two buckets and bunch of colored balls. select the balls you want to remove from one bucket and put in the other bucket. That's it! very relaxing.
 
-Currently, two official plugins are available:
+-This project demonstates the use of React, specifically managing state, passing props, conditional rendering , as well as some nifty  abstraction and encapsulation of logic.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Link to Netlify Deploymnet:
+ https://66055f4147a398239f8777da--cozy-wisp-729f86.netlify.app/
