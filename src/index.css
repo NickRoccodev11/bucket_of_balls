@@ -24,8 +24,9 @@ body {
 }
 
 .bucket {
-  height: 70%;
-  width: 70%;
+  height: auto;
+  width:70%;
+  overflow: hidden;
   border: 2px solid black;
   background-color: rgb(171, 184, 195);
   margin: 10px;
@@ -116,4 +117,8 @@ body {
 
 .salmon{
   background-color: salmon;
+}
+
+.azure{
+  background-color: azure;
 }

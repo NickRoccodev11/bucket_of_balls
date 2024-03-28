@@ -11,7 +11,7 @@ function App() {
     { id: 3, color: "green" },
     { id: 4, color: "blue" },
     { id: 5, color: "purple" },
-    { id: 6, color: "white" },
+    { id: 6, color: "azure" },
     { id: 7, color: "black" }
   ])
   const [b2Contents, setB2Contents] = useState([
