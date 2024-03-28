@@ -6,3 +6,6 @@
 
 Link to Netlify Deploymnet:
  https://66055f4147a398239f8777da--cozy-wisp-729f86.netlify.app/
+
+
+TODO: adapt for mobile screen-sizes

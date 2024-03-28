@@ -65,6 +65,35 @@ body {
 
 }
 
+@media(max-width: 432px) {
+  .bucket {
+    height: 200px;
+    width: 300px;
+    margin: 5px;
+    padding: 2px;
+  }
+
+  .ball {
+    width: 15px;
+    height: 15px;
+    padding-bottom: 0px;
+  }
+
+  #app-container {
+    height: 200px;
+    margin:10px;
+  }
+
+  .switch-button {
+    margin-left: 30%;
+    height: 30px;
+  }
+
+  #heading {
+    font-size: .8rem;
+  }
+}
+
 
 .red {
   background-color: red;
