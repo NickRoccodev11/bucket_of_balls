@@ -12,7 +12,8 @@ function App() {
     "blue",
     "purple",
     "azure",
-    "black"])
+    "black"
+  ])
   const [b2Contents, setB2Contents] = useState([
     "brown",
     "magenta",
@@ -72,10 +73,10 @@ function App() {
           selectBall={selectBall}
           selected={selected}
         />
-
       </div>
       <div id="button-div">
-        <button className="switch-button"
+        <button
+          className="switch-button"
           onClick={() => switchBuckets()}
         >
           switch buckets</button>

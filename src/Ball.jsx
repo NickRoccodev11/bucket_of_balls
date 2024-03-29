@@ -1,5 +1,4 @@
-
-const Ball = ({  ball, selectBall, selected }) => {
+const Ball = ({ ball, selectBall, selected }) => {
   return (
     <div
       className={` ball ${ball} ${selected.includes(ball) ? 'selected' : ''}`}
