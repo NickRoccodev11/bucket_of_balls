@@ -1,9 +1,9 @@
 
-const Ball = ({ id, color, selectBall, selected }) => {
+const Ball = ({  ball, selectBall, selected }) => {
   return (
     <div
-      className={` ball ${color} ${selected.includes(id) ? 'selected' : ''}`}
-      onClick={() => selectBall(id)}
+      className={` ball ${ball} ${selected.includes(ball) ? 'selected' : ''}`}
+      onClick={() => selectBall(ball)}
     >
     </div>
   )

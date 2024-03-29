@@ -5,11 +5,10 @@ const Bucket = ({ contents, selectBall, selected }) => {
     <>
       <div className="bucket">
         {
-          contents.map(ball => {
+          contents.map((ball, index) => {
             return <Ball
-              key={ball.id}
-              id={ball.id}
-              color={ball.color}
+              key={index}
+              ball={ball}
               selectBall={selectBall}
               selected={selected}
             />
