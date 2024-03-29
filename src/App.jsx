@@ -21,8 +21,8 @@ function App() {
     { id: 11, color: "cornflowerblue" },
     { id: 12, color: "olive" },
     { id: 13, color: "teal" },
-    {id: 14, color: "darkslategray"},
-    {id: 15, color: "salmon"}
+    { id: 14, color: "darkslategray" },
+    { id: 15, color: "salmon" }
   ])
   const [selected, setSelected] = useState([])
 
@@ -75,10 +75,12 @@ function App() {
         />
 
       </div>
-      <button className="switch-button"
-        onClick={() => switchBuckets()}
-      >
-        switch buckets</button>
+      <div id="button-div">
+        <button className="switch-button"
+          onClick={() => switchBuckets()}
+        >
+          switch buckets</button>
+      </div>
     </>
   )
 }

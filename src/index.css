@@ -14,13 +14,16 @@ body {
 }
 
 .switch-button {
-  margin-left: 41%;
   background-color: rgb(219, 142, 142);
   box-shadow: 5px 5px 5px brown;
   font-size: larger;
   color: rgb(115, 27, 27);
   height: 80px;
   width: auto;
+}
+#button-div{
+  display:flex;
+  justify-content: center;
 }
 
 .bucket {
@@ -67,10 +70,13 @@ body {
 
 @media(max-width: 432px) {
   .bucket {
-    height: 200px;
-    width: 300px;
+    height: 400px;
+    width: 45%;
     margin: 5px;
-    padding: 2px;
+    grid-gap: 1px;
+    /* padding: 2px; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   .ball {
@@ -80,13 +86,15 @@ body {
   }
 
   #app-container {
+    width: 100%;
     height: 200px;
-    margin:10px;
+    margin: 0px;
   }
 
   .switch-button {
-    margin-left: 30%;
     height: 30px;
+    position: relative;
+    top: 260px;
   }
 
   #heading {

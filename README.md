@@ -5,7 +5,6 @@
 -This project demonstates the use of React, specifically managing state, passing props, conditional rendering , as well as some nifty  abstraction and encapsulation of logic.
 
 Link to Netlify Deploymnet:
- https://66055f4147a398239f8777da--cozy-wisp-729f86.netlify.app/
+ https://66061011773f5269905ea277--sunny-dragon-af9a02.netlify.app/
 
-
-TODO: adapt for mobile screen-sizes
+!!bucket-o-balls now sized for phones as well!
